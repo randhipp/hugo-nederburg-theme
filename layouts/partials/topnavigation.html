@@ -95,6 +95,24 @@
     </li>
     {{end}}
 
+    {{ with .Site.Params.social.gitlab }}
+    <li>
+      <a href="{{ . }}" data-animate-hover="pulse" class="gitlab" target="_blank">
+        <i class="fab fa-gitlab" title="gitlab"></i>
+        <span class="screen-reader-text">github</span>
+      </a>
+    </li>
+    {{end}}
+
+    {{ with .Site.Params.social.telegram }}
+    <li>
+      <a href="{{ . }}" data-animate-hover="pulse" class="telegram" target="_blank">
+        <i class="fab fa-telegram" title="telegram"></i>
+        <span class="screen-reader-text">telegram</span>
+      </a>
+    </li>
+    {{end}}
+
 
     {{ with .Site.Params.social.pinterest }}
     <li>

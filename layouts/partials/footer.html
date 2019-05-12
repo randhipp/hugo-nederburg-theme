@@ -98,6 +98,23 @@
         </li>
         {{end}}
 
+        {{ with .Site.Params.social.gitlab }}
+        <li>
+        <a href="{{ . }}" data-animate-hover="pulse" class="gitlab" target="_blank">
+            <i class="fab fa-gitlab" title="gitlab"></i>
+            <span class="screen-reader-text">github</span>
+        </a>
+        </li>
+        {{end}}
+
+        {{ with .Site.Params.social.telegram }}
+        <li>
+        <a href="{{ . }}" data-animate-hover="pulse" class="telegram" target="_blank">
+            <i class="fab fa-telegram" title="telegram"></i>
+            <span class="screen-reader-text">telegram</span>
+        </a>
+        </li>
+        {{end}}
 
         {{ with .Site.Params.social.pinterest }}
         <li>
@@ -117,7 +134,8 @@
         </li>
         {{end}}
 
-				</ul>	<div class="design-credit">
+                </ul>	
+                <div class="design-credit">
 		{{ range .Site.Params.copyright }}
 		<p>{{ . | markdownify }}</p>
 		{{ else }}
@@ -130,3 +148,41 @@
 		{{ end }}
 	</div>
 </footer>
+<section id="footer" class="design-credit">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left design-credit">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>    

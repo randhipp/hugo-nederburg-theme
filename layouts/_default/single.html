@@ -168,6 +168,23 @@ title="github icon"></i>
 </a>
 {{end}}
 
+{{ with $writer.gitlab }}
+<a class="gitlab" target="_blank"
+href="{{ . }}">
+<i class="fab fa-gitlab"
+title="gitlab icon"></i>
+</a>
+{{end}}
+
+{{ with $writer.telegram }}
+<a class="telegram" target="_blank"
+href="{{ . }}">
+<i class="fab fa-telegram"
+title="telegram icon"></i>
+</a>
+{{end}}
+
+
 
 {{ with $writer.pinterest }}
 <a class="pinterest" target="_blank"
